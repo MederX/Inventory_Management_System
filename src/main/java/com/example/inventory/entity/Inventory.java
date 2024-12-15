@@ -9,10 +9,9 @@ public class Inventory {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Min(0) // Ensures stock cannot be negative
+    @Min(0)
     private int stock;
 
-    // Getters and Setters
     public Long getId() {
         return id;
     }
